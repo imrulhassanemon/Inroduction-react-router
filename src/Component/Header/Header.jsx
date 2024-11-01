@@ -12,6 +12,7 @@ const Header = () => {
                 <Link to={'/contact'}>Contact</Link>
                 {/* <a href="/contact">Contact Us</a> */}
                 <Link to={'/users'}>Users</Link>
+                <Link to={'/posts'}>Posts</Link>
 
             </nav>
         </div>
