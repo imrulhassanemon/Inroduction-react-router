@@ -16,11 +16,13 @@ import Posts from './Component/Posts/Posts';
 import PostDetails from './Component/PostDetails/PostDetails';
 import Comments from './Component/Comments/Comments';
 import CommentShow from './Component/CommentShow/CommentShow';
+import Error from './Component/Error/Error';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <div ><Home></Home></div>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/header',

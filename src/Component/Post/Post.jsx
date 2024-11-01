@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 const Post = ({post}) => {
-    const {id, title, body} = post;
+    const {id, title} = post;
     const userPostStyle = {
         border:'2px solid green',
         padding:'5px',
@@ -19,5 +19,9 @@ const Post = ({post}) => {
         </div>
     );
 };
+Post.propTypes = {
+    post: PropTypes.object
+}
+
 
 export default Post;
