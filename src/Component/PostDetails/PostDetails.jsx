@@ -1,9 +1,11 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 
 const PostDetails = () => {
     const post = useLoaderData();
-    console.log(post);
+    const {postId} = useParams()
+    console.log(postId);
+    
     const { id, title, body} = post;
     return (
         <div>
